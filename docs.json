@@ -23,7 +23,11 @@
         {
           "anchor": "Blog",
           "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
+          "color": {
+            "light": "#0052ff",
+            "dark": "#0052ff"
+          },
+          "href": "https://docs.monipay.xyz"
         }
       ]
     },
