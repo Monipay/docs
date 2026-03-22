@@ -7,7 +7,7 @@ cuid: cmn1e90zj00c01qmf2omvbdi6
 slug: what-is-monipay-how-we-are-redefining-how-money-moves-in-the-age-of-ai
 cover: https://cdn.hashnode.com/uploads/covers/6572eb4aa09b3311fdb7ba14/183ecfd5-2a66-44c0-83dc-489806e3dc20.png
 ogImage: https://cdn.hashnode.com/uploads/og-images/6572eb4aa09b3311fdb7ba14/f5745249-e1b2-43d1-ba8d-b3b406ef71ea.png
-tags: base, solana, self-custody, financial-inclusion, bsc, bnb-chain, usdt, usdc, eip712, account-abstraction, erc-4337, conversational-commerce, chain-abstraction, solana-blockchain-development, agentic-commerce, ai-payments, stablecoin-payment-platform-development, non-custodial, monitag, monibot, gasless-transactions, eip-712, ausd, social-payments
+tags: stablecoins, account-abstraction, conversational-commerce, chain-abstraction, agentic-commerce, ai-payments, non-custodial, gasless-transactions, monipay
 
 ---
 
