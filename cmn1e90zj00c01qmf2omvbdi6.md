@@ -25,6 +25,8 @@ The infrastructure for a better financial system has existed for years. The miss
 
 ## The Problem Is Not Blockchain. It Is UX.
 
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r1dzk3c371jnec9srmyw.png)
+
 Here is what sending stablecoins looked like before Monipay:
 
 1.  Download a wallet
@@ -64,6 +66,7 @@ That is the entire user experience.
 
 ### The Three Pillars
 
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dvgbu221uvzhf3cg9t0t.png)
 **moniTag™ Identity**
 
 Your moniTag™ is your payment identity across [Base](https://monipay.xyz/base), [BSC](https://monipay.xyz/bsc), and [Solana](https://monipay.xyz/solana) simultaneously. We resolve it to the correct wallet address on whatever chain the sender is using. You never have to tell anyone which chain you are on. You never share a wallet address again.
@@ -116,6 +119,7 @@ It is more work. But it is honest engineering.
 
 That said, We built something that gets meaningfully closer to that vision.
 
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/whqxfjeq9uz2nkq445x7.png)
 MoniBot routes payments intelligently at execution. It does not just follow the user’s selected chain and fail. Before any transaction, it checks three things.
 
 If allowance is insufficient, it looks across other supported chains and routes the payment where approval already exists, then informs the user.
@@ -129,7 +133,6 @@ This is not full abstraction yet. The user still has a preferred chain. But the 
 You type a command. The payment goes through. Where it settles becomes a detail, not a decision.
 
 That is the direction. The chain should be invisible to the user.
-
 
 ### Tempo Raised the Bar and the Question
 
@@ -167,7 +170,10 @@ Here is where things actually stand as of March 2026.
 
 **Personal payments** are live. Send USDC to any moniTag™ on Base. Send USDT to any moniTag™ on BSC. Scan a QR code to pay a merchant. Receive payments via your branded moniTag™ QR & Username. Full [transaction history](https://monipay.xyz) with real-time sync.
 
-**Merchant suite** is live. This is the part I am most proud of because nothing else in crypto comes close to what we built for merchants. Zero hardware required. Your phone is your payment terminal. You get:
+**Merchant suite** is live. This is the part I am most proud of because nothing else in crypto comes close to what we built for merchants. Zero hardware required. Your phone is your payment terminal.
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r88jxc3z70mria125mx2.png)
+ You get:
 
 *   QR charge flow for in-person payments
     
