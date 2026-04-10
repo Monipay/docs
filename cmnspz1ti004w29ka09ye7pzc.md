@@ -1,22 +1,20 @@
 ---
-title: " Three Things That Could Break Crypto And What We t Monipay Think About Them"
+title: " Three Things That Could Break Crypto And What We At Monipay Think About Them"
 seoTitle: "Satoshi, Quantum, & Mythos: Analyzing a Week of Cryptography"
 seoDescription: "Satoshi identity, Quantum risks, and Mythos AI exploits analyze the week's biggest crypto security threats and how Monipay builds for the future."
 datePublished: 2026-04-10T09:44:42.488Z
 cuid: cmnspz1ti004w29ka09ye7pzc
-slug: three-things-that-could-break-crypto-and-what-we-t-monipay-think-about-them
+slug: three-things-that-could-break-crypto-and-what-we-at-monipay-think-about-them
 cover: https://cdn.hashnode.com/uploads/covers/6572eb4aa09b3311fdb7ba14/a4ef4c0b-4e7c-4b19-92d9-cb31ee4dfe31.png
 ogImage: https://cdn.hashnode.com/uploads/og-images/6572eb4aa09b3311fdb7ba14/ef774cc2-730b-431c-904c-1eba75f3c547.png
 tags: quantum-computing, satoshinakamoto, crypto-security, anthropic-mythos, project-glasswing, aes-gcm-vulnerability, quantum-safe-bitcoin, qsb
 
 ---
 
-
-
-
 This week gave the crypto industry a lot to sit with.
 
 On April 8, [Anthropic published findings](https://www.anthropic.com) from its newest AI model, [Claude Mythos Preview](https://nxcode.io/claude-mythos-preview-anthropics-most-powerful-ai), showing it had autonomously found and exploited security vulnerabilities in cryptography libraries that had gone undetected for decades. Two days before that, the[New York Times published an investigation](https://www.theblock.co/news/nyt-investigation-suggests-adam-back-may-be-satoshi-nakamoto) pointing to Adam Back, the CEO of Blockstream, as the most likely identity behind Satoshi Nakamoto. [Back denied it](https://www.xt.com/en/news/adam-back-denies-being-satoshi-amid-nyt-probe). And on April 9,[a researcher at StarkWare published a working scheme for quantum-safe Bitcoin transactions](https://cryptonews.net/news/bitcoin/starkware-researcher-publishes-quantum-safe-bitcoin-transaction-scheme/) that requires no changes to the Bitcoin protocol and costs [between $75 and $150 in cloud GPU compute to execute](https://cryptonews.net/news/bitcoin/starkware-researcher-publishes-quantum-safe-bitcoin-transaction-scheme/).
+https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pblo4ax72iphp2q979om.png)
 
 Three separate developments. Three different risk categories. All arriving in the same week.
 
@@ -25,6 +23,8 @@ I want to go through each one, explain what I actually think the risk is, and th
 * * *
 
 ## The Satoshi question
+
+https://dev-to-uploads.s3.amazonaws.com/uploads/articles/okfksfp8l4fvuly6jpmb.png)
 
 The[New York Times investigation, led by John Carreyrou](https://www.pcgamer.com/a-renowned-new-york-times-investigative-reporter-thinks-british-cryptographer-is-bitcoin-creator-satoshi-nakamoto-said-cryptographer-says-no/), points to Adam Back as the most likely candidate based on linguistic analysis, overlapping timelines, and[Back's development of HashCash](https://bitcoinfoundation.org/nyt-names-adam-back-as-most-likely-satoshi-nakamoto/), a proof-of-work system that directly influenced Bitcoin's design. [Back denied the claims in a series of posts on X](https://www.xt.com/en/news/adam-back-denies-being-satoshi-amid-nyt-probe). Blockstream released a statement calling the report "circumstantial interpretation of select details and speculation, not definitive cryptographic proof."
 
@@ -45,7 +45,7 @@ For stablecoins and for Monipay specifically, a Bitcoin confidence shock matters
 * * *
 
 ## The quantum threat, which is no longer theoretical
-
+https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dlfzghxo4en0dfgbu96y.png)
 The quantum risk to Bitcoin has been discussed for years as a future problem. This week it became a present engineering problem.
 
 On April 9,[Avihu Mordechai Levy of StarkWare published a paper titled "Quantum-Safe Bitcoin Transactions Without Softforks."](https://cryptorank.io/news/bitcoin-could-be-quantum-safe-without-protocol-changes-new-proposal-claims) The abstract describes [QSB, a quantum-safe Bitcoin transaction scheme](https://www.criptonoticias.com/tecnologia/presentan-una-forma-de-blindar-bitcoin-contra-la-cuantica-hoy-y-no-requiere-un-softfork/) that requires no changes to the Bitcoin protocol and remains secure even against an adversary running Shor's algorithm. The scheme works within Bitcoin's existing legacy script constraints of 201 opcodes and 10,000 bytes.
@@ -71,6 +71,8 @@ For Monipay, the quantum question touches us at the signature layer. Our EIP-712
 * * *
 
 ## The Mythos threat, which is different from the others
+
+https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2v9yvasazc3l1ezjcc98.png)
 
 The first two threats are about Bitcoin specifically or about the underlying cryptographic primitives. The Mythos threat is about everything.
 
