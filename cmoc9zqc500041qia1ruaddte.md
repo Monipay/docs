@@ -98,6 +98,21 @@ MagicPay is not a custodial service. Monipay never holds funds in a company wall
 
 It is chain-agnostic in practice: the same payment command works regardless of which chain the sender's account is configured for, and the recipient claims on whatever chain the payment was settled on. The user never chooses a chain.
 
+###   
+What comes next
+
+![Discord and Telegram onchain subscription manager](https://cdn.hashnode.com/uploads/covers/6572eb4aa09b3311fdb7ba14/27f699a0-475b-4ab0-b1e3-a90538fa1119.png align="center")
+
+MagicPay is the first piece of a larger picture for how MoniBot manages money inside communities. The next feature in the pipeline is subscription management, and it is coming to both Discord and Telegram.
+
+For Discord, the model works like this: a server admin sets a subscription fee, token, chain, and billing period directly inside their server. Members pay with a single command. MoniBot registers the subscription on-chain, assigns a verified subscriber role automatically, and handles the full lifecycle from there. It sends DM warnings seven days, three days, and twenty-four hours before a subscription expires. If a member does not renew, MoniBot revokes their role and, if the admin has configured it, removes them from the server after a grace period of one to seven days. Admins get a live dashboard showing active subscribers, total revenue, and an expiry calendar.
+
+Telegram follows the same logic adapted for groups. The admin locks a subscription tier with a fee, token, and chain. Members type "subscribe" and MoniBot generates a payment link. Confirmation registers them on-chain instantly. Warnings arrive via bot DM. Expired members are removed automatically. Revenue reports are available to the admin on demand.
+
+Both systems run entirely through MoniBot. No third-party subscription tool. No manual role management. No chasing members for payments. The contract handles enforcement so the admin does not have to.
+
+If you run a paid Discord community, a DAO, or a Telegram group with a membership fee, this is the feature to watch. Follow [@monipay\_xyz](https://twitter.com/intent/tweet?text=%40monibot) on X for the launch announcement.
+
 ## Get started
 
 [MoniBot](https://monipay.xyz/monibot) is available now on [Discord](https://discord.com/oauth2/authorize?client_id=1473815294022520964&permissions=6829344014687335&integration_type=0&scope=bot), [X](https://twitter.com/intent/tweet?text=%40monibot), and [Telegram](https://t.me/monipaybot?startgroup=new). Add it to your server, follow it on X, or start it in your Telegram group. Fund your Monipay wallet with USDT on any supported chain and send your first payment.
@@ -167,6 +182,18 @@ Yes. MagicPay charges a 2% escrow fee at the time of sending. Gas fees for the c
 ### Can I send MagicPay payments to multiple people at once?
 
 Yes. MoniBot's multi-send feature lets you send to multiple recipients in a single command. Each recipient gets an individual escrow entry. On Ink, multiple payments to the same recipient are batched into a single claim.
+
+### Does MoniBot support subscription payments?
+
+Subscription management is coming soon for both Discord and Telegram. Server and group admins will be able to set a recurring fee, token, and billing period directly inside their community. MoniBot will handle payment collection, on-chain registration, role assignment, renewal warnings, and automatic removal of expired members. No third-party tools required.
+
+### How will Discord subscriptions work with MoniBot?
+
+The admin sets a subscription fee, token, chain, and duration inside the Discord server. Members pay with a single MoniBot command. MoniBot assigns a verified subscriber role on-chain instantly, sends DM reminders seven days, three days, and twenty-four hours before expiry, and revokes access after a configurable grace period if the member does not renew. Admins get a dashboard with active subscriber counts, total revenue, and an expiry calendar.
+
+### How will Telegram subscriptions work with MoniBot?
+
+The group admin locks a subscription tier with a fee, token, and chain. Members type "subscribe" and receive a payment link from MoniBot. Confirmation registers them on-chain. MoniBot sends private DM warnings before expiry and removes expired members automatically. Admins can request revenue reports from the bot at any time.
 
 ### What is a MoniTag?
 
